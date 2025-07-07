@@ -20,7 +20,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="navbar nav">
-            <ActiveLink href="/products" className='nav-link'>Products</ActiveLink>
+            <ActiveLink href="/" className='nav-link'>Products</ActiveLink>
             <ActiveLink href="/about" className='nav-link'>About</ActiveLink>
           </div>
         </nav>

@@ -1,5 +1,10 @@
-import { redirect } from 'next/navigation';
+import React, { Suspense } from 'react';
+import ProductsPage from './products/ProductsPageClient';
 
 export default function Home() {
-  redirect('/products');
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProductsPage />
+    </Suspense>
+  );
 }
