@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 
 interface MobileMenuProps {
   isOpen: boolean;
-  onClose: () => any
+  onClose: () => any;
 }
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
@@ -18,20 +18,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div className="row mx-0">
       <div className="col-12 px-0">
-        <ActiveLink
-          href="/products"
-          className="nav-link mx-0"
-          onClick={onClose}
-        >
+        <ActiveLink href="/" className="nav-link mx-0" onClick={onClose}>
           Products
         </ActiveLink>
       </div>
       <div className="col-12 px-0">
-        <ActiveLink
-          href="/about"
-          className="nav-link mx-0"
-          onClick={onClose}
-        >
+        <ActiveLink href="/about" className="nav-link mx-0" onClick={onClose}>
           About
         </ActiveLink>
       </div>
